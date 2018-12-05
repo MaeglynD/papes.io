@@ -1,6 +1,6 @@
 # papes
 
-> A SSR Wallpaper site made with vuejs &amp; vuetify
+ A SSR Wallpaper site made with vuejs &amp; vuetify
 
 ## Build Setup
 
@@ -19,4 +19,4 @@ $ npm start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+Or check out the live site at https://papesio.github.io
