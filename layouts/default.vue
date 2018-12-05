@@ -9,7 +9,7 @@
       </v-card>
       <v-spacer></v-spacer>
 
-      <v-dialog v-model="dialog" class="dialog-container" height="675px" width="450px" lazy transition="slide-y-transition">
+      <v-dialog v-model="dialog" class="dialog-container" height="675px" width="450px" transition="slide-y-transition">
       <v-btn dark color="rgba(255, 255, 255, 0)" large depressed class="toolbtn" slot="activator" @click="changeDiaClassLogin()"><span class="hidden-lg-and-up"><span class="mdi mdi-login"></span></span><span class="hidden-md-and-down">sign in</span></v-btn>
       <v-btn dark color="rgba(255, 255, 255, 0)" large depressed class="toolbtn create-acc" slot="activator" @click="changeDiaClassCreate()"><span class="hidden-lg-and-up"><span class="mdi mdi-account-plus"></span></span><span class="hidden-md-and-down">create account</span></v-btn>
 
@@ -155,7 +155,7 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-dialog v-model="contactDialog" class="dialog-container" height="675px" width="450px" lazy transition="slide-y-transition">
+    <v-dialog v-model="contactDialog" class="dialog-container" height="675px" width="450px" transition="slide-y-transition">
       <v-card class="dialog-contact">
         <v-card class="dialog-top" color="rgba(0,0,0,0)" flat >
           <v-layout row wrap>
@@ -224,7 +224,6 @@
 
 
   export default {
-
     data () {
       return {
         drawer: false,
@@ -449,7 +448,10 @@ text-align: center;
   padding-top: 30px;
   font-size: 20px;
   width: 100%;
-  background: #0d0e0f;
+  background: #070708;
+}
+.v-dialog:not(.v-dialog--fullscreen) {
+  max-height: 100%
 }
 @media only screen and (max-width: 770px) {
 .toolbtn{
@@ -462,7 +464,7 @@ text-align: center;
  display: none;
 }
 }
-@media only screen and (max-width: 530px), screen and (max-height: 710px) {
+@media only screen and (max-width: 530px), screen and (max-height: 650px) {
 .v-dialog{
   box-shadow: none;
 }

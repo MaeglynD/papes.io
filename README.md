@@ -1,10 +1,22 @@
-# papes.io
-A Server side rendered wallpaper site, made with nuxt (VueJS, Vuetify) 
+# papes
 
-Once downloaded
-``` 
-npm install
-npm run dev
- ```
+> A SSR Wallpaper site made with vuejs &amp; vuetify
 
-or check out the live site on https://papesio.github.io/
+## Build Setup
+
+``` bash
+# install dependencies
+$ npm install
+
+# serve with hot reload at localhost:3000
+$ npm run dev
+
+# build for production and launch server
+$ npm run build
+$ npm start
+
+# generate static project
+$ npm run generate
+```
+
+For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).

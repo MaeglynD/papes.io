@@ -1,9 +1,6 @@
 const pkg = require('./package')
 
 export default {
-  router: {
-    base: '/<repository-name>/'
-  }
 }
 
 module.exports = {
@@ -75,7 +72,10 @@ module.exports = {
     }
   },
   router: {
-    base: ''
+    base: '',
+    scrollBehavior: function (to, from, savedPosition) {
+      return { x: 0, y: 0 }
+    },
   }
 
 }

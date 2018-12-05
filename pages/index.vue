@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="main-home-container">
-      <v-container grid-list-xs,sm,md,lg,xl class="main-v-cont" >
+      <v-container grid-list-xs,sm,md,lg,xl class="main-v-cont">
         <v-layout align-center justify-center row fill-height>
           <v-flex xs12 class="main-info">
             <h1 class="">Cross platform, high definition papes from /<span class="glow">wg</span>/</h1>
@@ -21,7 +21,7 @@
             <h1 class="pa-0 ma-0">Browse</h1>
           </v-flex>
           <v-flex xs12 sm6 class=" control-cont align-self-center">
-            <v-btn  class="pa-0 ma-0 right subheading" depressed outline>ALL</v-btn>
+            <v-btn  class="pa-0 ma-0 right subheading" depressed >ALL</v-btn>
             <div class="main-control-cont">
               <v-btn  :class="{'pa-0': true, 'ma-0': true, 'right': true, 'ml-2': $vuetify.breakpoint.smAndUp, 'mr-4': $vuetify.breakpoint.smAndUp}" depressed ><v-icon>chevron_right</v-icon></v-btn>
               <v-btn  class="pa-0 ma-0 right" disabled  ><v-icon>chevron_left</v-icon></v-btn>
@@ -70,12 +70,13 @@
   </div>
 </template>
 
+
 <style scoped>
 .main-home-container{
   top: 0;
   height: 100vh;
   width: 100%;
-  background: url("../static/main-bg.png") top center/cover no-repeat;
+  background: url("../static/rainguy.png") top center/cover no-repeat;
   max-height: 969px;
   min-height: 500px;
 }
@@ -104,10 +105,10 @@
   margin-top: -300px;
   width: 100%;
   height: 300px;
-  background: rgb(23,24,26); /* Old browsers */
-  background: -moz-linear-gradient(top, rgba(23,24,26,0) 0%, rgba(23,24,26,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(23,24,26,0) 0%,rgba(23,24,26,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(23,24,26,0) 0%,rgba(23,24,26,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: rgb(18,18,18); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(18,18,18,0) 0%, rgba(18,18,18,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(18,18,18,0) 0%,rgba(18,18,18,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(18,18,18,0) 0%,rgba(18,18,18,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#17181a', endColorstr='#17181a',GradientType=0 ); /* IE6-9 */
 }
 .main-gradient-container span:hover{
@@ -119,7 +120,7 @@
   max-height: 969px;
   width: 100%;
   padding-top: 64px;
-  background: rgb(23,24,26);
+  background: rgb(18,18,18)
 }
 .main-cat-v{
   max-width: 1100px;
@@ -133,7 +134,6 @@
 .main-control-cont .v-btn{
   background-color: rgba(255, 255, 255, 0);
   min-width: 40px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
 }
 .main-control-cont .v-btn--disabled{
   border: 0px;
@@ -188,7 +188,6 @@
   font-size: 170px;
 }
 .cat-child{
-  border: 1px solid rgba(255, 255, 255, 0.4)
 }
 .cat-parent:hover{
   cursor: pointer;
